@@ -47,6 +47,7 @@
                             (?\` . ?\`)
                             (?\[ . ?\])
                             (?\' . ?\')
+                            (?\< . ?\>)
                             ))
 
 (custom-set-variables
@@ -54,7 +55,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (dichromacy)))
+ '(ansi-color-names-vector
+   ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
+ '(custom-enabled-themes (quote (adwaita)))
  '(package-selected-packages
    (quote
 	(json-mode rust-mode yasnippet sr-speedbar company restclient emmet-mode indent-guide telephone-line rjsx-mode evil-terminal-cursor-changer evil use-package))))
@@ -63,4 +66,5 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(indent-guide-face ((t (:foreground "red" :slant normal))))
+ '(line-number-current-line ((t (:background "dark gray" :foreground "black")))))

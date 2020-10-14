@@ -1,5 +1,6 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
+(global-set-key (kbd "C-c d") 'org-todo)
 
 (setq org-agenda-files '("~/.org/notes.org"
 						 "~/.org/tasks.org"
