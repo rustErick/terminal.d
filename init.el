@@ -26,7 +26,7 @@
   (use-package-always-ensure t)
   (use-package-compute-statistics t))
 
-;; EVI MODE
+;; EVIL MODE
 (use-package evil
   :init (evil-mode 1)
   ;; :hook (after-init . evil-mode)
@@ -63,13 +63,14 @@
 (global-set-key (kbd "C-c t") 'shell)
 (global-set-key (kbd "C-c p") 'other-frame)
 (global-set-key (kbd "C-x f") 'delete-frame)
+(global-set-key (kbd "C-c l") 'list-colors-display)
 (global-set-key (kbd "M-k") 'enlarge-window)
 (global-set-key (kbd "M-j") 'shrink-window)
 ;; (global-set-key (kbd "M-h") 'shrink-window-horizontally)
 (global-set-key (kbd "M-l") 'enlarge-window-horizontally)
 (global-set-key (kbd "<dead-acute>") ">")
 (global-set-key (kbd "<dead-diaeresis>") "<")
-
+(global-set-key (kbd "<dead-circumflex>") "`")
 ;; EVIL TERMINAL CURSOR
 (unless (display-graphic-p)
   (require 'evil-terminal-cursor-changer)

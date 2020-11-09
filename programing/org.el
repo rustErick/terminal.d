@@ -8,7 +8,7 @@
 						 "~/.org/project.org"
 						 ))
 
-
+(setq org-ellipsis "⬎")
 (setq org-capture-templates
       (quote (
               ("n"         ;; hotkey
